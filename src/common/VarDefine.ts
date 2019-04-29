@@ -1,9 +1,11 @@
 import * as vscode from 'vscode';
 import * as mysql from 'mysql';
+import * as viewDatas from "../mysql/viewDatas"
 export interface extensionGlobal {
     currentWebViewPanel: vscode.WebviewPanel|undefined,
     context: vscode.ExtensionContext,
     dbconnection: mysql.Connection | undefined,
+    treedatas?: viewDatas.FlowDataProvider,
 }
 export var webviewFilePath = {
     webview1: ['src','dist','index.html'],
@@ -20,5 +22,6 @@ export const commandsName = {
     "dbCommand2" : "myextension.dbtest2",
     "virtualDoc1": "myextension.virtual3",
     "entryCommand": "myplugin.entryCommand",
-    "database1":"myextension.database1"
+    "database1":"myextension.database1",
+    "viewRefresh1":"myextension.viewsRefresh1"
 }

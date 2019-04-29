@@ -7,6 +7,11 @@
     "contributes": {
         "commands":[
             {
+                "command":"myextension.viewsRefresh1",
+                "title": "viewsRefresh1",
+                "icon":"./media/mysql.svg"
+            },
+            {
                 "command":"myextension.dbtest2",
                 "title": "dbtest2",
                 "icon":"./media/mysql.svg"
@@ -49,6 +54,11 @@
         },
         "menus":{
             "view/title": [
+                {
+                    "command": "myextension.viewsRefresh1",
+                    "when": "view == <(￣ˇ￣)/",
+                    "group": "navigation"
+                },
                 {
                     "command": "myextension.dbtest2",
                     "when": "view == database",

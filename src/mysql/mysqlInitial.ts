@@ -10,7 +10,7 @@ export default function(globalVar:extensionGlobal){
     //注册命令
     dbTestFuncRegister();
     queryTest(globalVar);
-    viewDatas();
+    viewDatas(globalVar);
 }
 
 
