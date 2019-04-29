@@ -8,7 +8,16 @@
                 "command": "myplugin.entryCommand",
                 "title": "entryCommand"
             }
-        ]
+        ],
+        "viewsContainers": {
+            "activitybar": [
+                {
+                    "id": "container01",
+                    "title": "container01",
+                    "icon": "./media/cherry.svg"
+                }
+            ]
+        }
     },
     "name": "plugintest",
     "version": "1.0.0",

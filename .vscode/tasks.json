@@ -6,7 +6,7 @@
 		{
 			"type": "shell",
 			"label": "minePreCommand",
-			"command": "node ${workspaceFolder}\\src\\comman\\generateCommand.js",
+			"command": "node ${workspaceFolder}\\src\\common\\generateCommand.js",
 		}
 	]
 }

@@ -2,7 +2,6 @@
     "commands": [
         "commands.test",
         "commands2",
-        "commands3",
-        "commands4"
+        "commands3"
     ]
 }

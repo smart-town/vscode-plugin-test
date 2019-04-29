@@ -15,12 +15,17 @@
             {
                 "command": "commands3",
                 "title": "commands3"
-            },
-            {
-                "command": "commands4",
-                "title": "commands4"
             }
-        ]
+        ],
+        "viewsContainers": {
+            "activitybar": [
+                {
+                    "id": "container01",
+                    "title": "container01",
+                    "icon": "./media/cherry.svg"
+                }
+            ]
+        }
     },
     "name": "plugintest",
     "version": "1.0.0",

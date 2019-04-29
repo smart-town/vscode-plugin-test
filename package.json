@@ -1,15 +1,68 @@
 {
     "activationEvents": [
-        "onCommand:myplugin.entryCommand"
+        "onCommand:myplugin.entryCommand",
+        "onView:database",
+        "onView:testView"
     ],
     "contributes": {
         "commands":[
             {
+                "command":"myextension.dbtest2",
+                "title": "dbtest2",
+                "icon":"./media/mysql.svg"
+            },
+            {
+                "command":"myextension.database1",
+                "title": "database1",
+                "icon":"./media/database.svg"
+            },
+            {
                 "command":"myplugin.entryCommand",
                 "title": "entryCommand"
             }
-        ]
+        ],
+        "viewsContainers": {
+            "activitybar": [
+                {
+                    "id": "cherryContainer",
+                    "title": "cherry",
+                    "icon": "./media/cherry.svg"
+                }
+            ]
+        },
+        "views": {
+            "cherryContainer": [
+                {
+                    "id": "database",
+                    "name": "database"
+                },
+                {
+                    "id": "testView",
+                    "name": "testView"
+                },
+                {
+                    "id": "<(￣ˇ￣)/",
+                    "name": "<(￣ˇ￣)/"
+                }
+                
+            ]
+        },
+        "menus":{
+            "view/title": [
+                {
+                    "command": "myextension.dbtest2",
+                    "when": "view == database",
+                    "group": "navigation"
+                },
+                {
+                    "command": "myextension.database1",
+                    "when": "view == database",
+                    "group": "navigation"
+                }
+            ]
+        }
     },
+    
     "name": "plugintest",
     "version": "1.0.0",
     "description": "test plugin",
